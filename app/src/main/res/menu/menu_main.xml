@@ -1,0 +1,25 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:app="http://schemas.android.com/apk/res-auto"
+      xmlns:tools="http://schemas.android.com/tools"
+      tools:context="com.stromberg.scott.thaumcraftaspectgrapher.MainActivity">
+
+    <item
+        android:id="@+id/action_add_all_aspects"
+        android:title="@string/add_all_aspects"
+        app:showAsAction="never"/>
+
+    <item
+        android:id="@+id/action_clear"
+        android:title="@string/clear"
+        app:showAsAction="never"/>
+
+    <item
+        android:id="@+id/action_backup"
+        android:title="@string/backup"
+        app:showAsAction="never"/>
+
+    <item
+        android:id="@+id/action_import"
+        android:title="@string/import_menu"
+        app:showAsAction="never"/>
+</menu>

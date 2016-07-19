@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="10dp">
+
+    <ImageView
+        android:id="@+id/aspect_list_row_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/unknown_aspect"
+        android:adjustViewBounds="true"
+        android:layout_centerVertical="true" />
+
+    <TextView
+        android:id="@+id/aspect_list_row_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="Aspect Name"
+        android:textColor="@android:color/black"
+        android:textSize="16sp"
+        android:layout_toRightOf="@+id/aspect_list_row_image"
+        android:layout_centerVertical="true"/>
+
+    <ImageView
+        android:id="@+id/aspect_list_row_link_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_link_black_24dp"
+        android:adjustViewBounds="true"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:visibility="gone"/>
+</RelativeLayout>

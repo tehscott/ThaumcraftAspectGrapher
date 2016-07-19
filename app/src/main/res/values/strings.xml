@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">ThaumcraftAspectGrapher</string>
+    <string name="action_settings">Settings</string>
+    <string name="add_all_aspects">Add All Aspects</string>
+    <string name="clear">Clear</string>
+    <string name="load">Load</string>
+    <string name="save">Save</string>
+    <string name="backup">Backup</string>
+    <string name="import_menu">Import</string>
+</resources>

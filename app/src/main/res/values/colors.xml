@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="fabNormal">#F44336</color>
+    <color name="fabPressed">#EF5350</color>
+    <color name="fabRipple">#E53935</color>
+    <color name="fabShadow">#444</color>
+    <color name="background">#f4ecdf</color>
+
+</resources>
