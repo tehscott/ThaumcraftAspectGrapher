@@ -1,4 +1,4 @@
-package com.stromberg.scott.thaumcraftaspectgrapher;
+package com.stromberg.scott.thaumcraft4aspectmapper;
 
 import android.app.Dialog;
 import android.support.v7.widget.RecyclerView;

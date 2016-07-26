@@ -6,10 +6,10 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
-    tools:context="com.stromberg.scott.thaumcraftaspectgrapher.MainActivity"
+    tools:context="com.stromberg.scott.thaumcraft4aspectmapper.MainActivity"
     tools:showIn="@layout/activity_main">
 
-    <com.stromberg.scott.thaumcraftaspectgrapher.DrawArea
+    <com.stromberg.scott.thaumcraft4aspectmapper.DrawArea
         android:id="@+id/draw_area"
         android:layout_width="fill_parent"
         android:layout_height="fill_parent" />

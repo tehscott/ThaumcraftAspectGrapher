@@ -1,6 +1,6 @@
 // TODO: https://github.com/Clans/FloatingActionButton/issues/61
 
-package com.stromberg.scott.thaumcraftaspectgrapher;
+package com.stromberg.scott.thaumcraft4aspectmapper;
 
 import android.content.Context;
 import android.graphics.Bitmap;

@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">ThaumcraftAspectGrapher</string>
+    <string name="app_name">Thaumcraft 4 Aspect Mapper</string>
     <string name="action_settings">Settings</string>
     <string name="add_all_aspects">Add All Aspects</string>
     <string name="clear">Clear</string>

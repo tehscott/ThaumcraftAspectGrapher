@@ -1,4 +1,4 @@
-package com.stromberg.scott.thaumcraftaspectgrapher;
+package com.stromberg.scott.thaumcraft4aspectmapper;
 
 import android.graphics.Canvas;
 import android.view.SurfaceHolder;

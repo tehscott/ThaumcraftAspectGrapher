@@ -1,4 +1,4 @@
-package com.stromberg.scott.thaumcraftaspectgrapher;
+package com.stromberg.scott.thaumcraft4aspectmapper;
 
 import android.Manifest;
 import android.app.Activity;
@@ -14,6 +14,7 @@ import android.os.Environment;
 import android.os.Handler;
 import android.support.annotation.NonNull;
 import android.support.design.widget.Snackbar;
+import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.view.ContextThemeWrapper;
@@ -80,6 +81,8 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
+        toolbar.setBackgroundColor(ContextCompat.getColor(getApplicationContext(), R.color.fabNormal));
+        toolbar.setTitle(getString(R.string.app_name));
         setSupportActionBar(toolbar);
 
         fab = (FloatingActionButton) findViewById(R.id.fab);
