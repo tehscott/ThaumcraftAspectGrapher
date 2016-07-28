@@ -69,6 +69,8 @@ public class MainActivity extends AppCompatActivity {
     public static int defaultAspectBackgroundHeight;
     public static int horizontalPadding;
     public static int verticalPadding;
+    public static int canvasWidth;
+    public static int canvasHeight;
 
     private FloatingActionButton fab;
     private FloatingActionMenu searchFam;
@@ -154,8 +156,14 @@ public class MainActivity extends AppCompatActivity {
         defaultAspectHeight = aspectBitmap.getHeight();
         defaultAspectBackgroundWidth = aspectBackgroundBitmap.getWidth();
         defaultAspectBackgroundHeight = aspectBackgroundBitmap.getHeight();
-        horizontalPadding = defaultAspectBackgroundWidth + Aspect.horizontalSpacing;
-        verticalPadding = defaultAspectBackgroundHeight + Aspect.verticalSpacing;
+        horizontalPadding = defaultAspectBackgroundWidth + Aspect.HORIZONTAL_SPACING;
+        verticalPadding = defaultAspectBackgroundHeight + Aspect.VERTICAL_SPACING;
+        canvasWidth = (defaultAspectBackgroundWidth * DrawArea.HORIZONTAL_ASPECT_COUNT) +
+                (Aspect.HORIZONTAL_SPACING * (DrawArea.HORIZONTAL_ASPECT_COUNT - 1)) +
+                (2 * MainActivity.horizontalPadding);
+        canvasHeight = (defaultAspectBackgroundHeight * DrawArea.VERTICAL_ASPECT_COUNT) +
+                (Aspect.VERTICAL_SPACING * (DrawArea.VERTICAL_ASPECT_COUNT - 1)) +
+                (2 * MainActivity.verticalPadding);
 
         new Handler().postDelayed(new Runnable() {
             @Override

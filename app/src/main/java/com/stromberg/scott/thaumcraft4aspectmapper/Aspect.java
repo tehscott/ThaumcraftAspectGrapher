@@ -116,8 +116,8 @@ public class Aspect {
             throw new RuntimeException("Width and Height must be set first.");
         }
 
-        x = MainActivity.defaultAspectBackgroundWidth + (MainActivity.defaultAspectBackgroundWidth * (horizontalPosition - 1) + horizontalSpacing * (horizontalPosition - 1));
-        y = MainActivity.defaultAspectBackgroundHeight + (MainActivity.defaultAspectBackgroundHeight * (verticalPosition - 1) + verticalSpacing * (verticalPosition - 1));
+        x = MainActivity.defaultAspectBackgroundWidth + (MainActivity.defaultAspectBackgroundWidth * (horizontalPosition - 1) + HORIZONTAL_SPACING * (horizontalPosition - 1));
+        y = MainActivity.defaultAspectBackgroundHeight + (MainActivity.defaultAspectBackgroundHeight * (verticalPosition - 1) + VERTICAL_SPACING * (verticalPosition - 1));
     }
 
     public boolean isInBounds(float x, float y) {

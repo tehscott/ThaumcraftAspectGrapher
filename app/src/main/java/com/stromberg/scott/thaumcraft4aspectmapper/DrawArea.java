@@ -25,8 +25,8 @@ import java.util.HashMap;
 public class DrawArea extends SurfaceView implements SurfaceHolder.Callback {
     private static final String TAG = DrawArea.class.getSimpleName();
     private final int DRAG_THRESHOLD = 10;
-    private final int HORIZONTAL_ASPECT_COUNT = 14;
-    private final int VERTICAL_ASPECT_COUNT = 8;
+    public static final int HORIZONTAL_ASPECT_COUNT = 14;
+    public static final int VERTICAL_ASPECT_COUNT = 8;
 
     public static boolean DEBUG = false;
 
@@ -150,15 +150,8 @@ public class DrawArea extends SurfaceView implements SurfaceHolder.Callback {
     }
 
     private void fixOffset() {
-        float canvasWidth = (MainActivity.defaultAspectBackgroundWidth * HORIZONTAL_ASPECT_COUNT) +
-                (Aspect.horizontalSpacing * (HORIZONTAL_ASPECT_COUNT - 1)) +
-                (2 * MainActivity.horizontalPadding);
-        float canvasHeight = (MainActivity.defaultAspectBackgroundHeight * VERTICAL_ASPECT_COUNT) +
-                (Aspect.verticalSpacing * (VERTICAL_ASPECT_COUNT - 1)) +
-                (2 * MainActivity.verticalPadding);
-
-        float maxWidth = Math.abs(canvasWidth - getWidth());
-        float maxHeight = Math.abs(canvasHeight - getHeight());
+        float maxWidth = Math.abs(MainActivity.canvasWidth - getWidth());
+        float maxHeight = Math.abs(MainActivity.canvasHeight - getHeight());
 
         if (xOffset <= 0) {
             xOffset = 0;
@@ -278,11 +271,32 @@ public class DrawArea extends SurfaceView implements SurfaceHolder.Callback {
                 fixOffset();
             }
 
+            // Canvas size - 20
+            Paint paint2 = new Paint();
+            paint2.setColor(Color.YELLOW);
+            canvas.drawRect(-xOffset, -yOffset, MainActivity.canvasWidth - xOffset - 20, MainActivity.canvasHeight - yOffset - 20, paint2);
+
+            // vertical margin
+//            paint2.setColor(Color.YELLOW);
+//            canvas.drawRect(-xOffset, -yOffset, MainActivity.canvasWidth - xOffset - 20, MainActivity.canvasHeight - yOffset - 20, paint2);
+
+            // horizontal margin
+
+            // vertical space
+
+            // horizontal space
+
+            // image size
+
+            // background size
+
             drawGraph(canvas);
 
             if(DEBUG) {
                 drawDebugInfo(canvas);
             }
+
+
         }
     }
 
@@ -361,6 +375,7 @@ public class DrawArea extends SurfaceView implements SurfaceHolder.Callback {
             paint.setAlpha(127);
         }
 
+        // TODO: Draw the background using a shape instead of a bmp
         canvas.drawBitmap(background, aspect.getX() - xOffset - (aspectBitmap.getWidth() / 2), aspect.getY() - yOffset - (aspectBitmap.getHeight() / 2), paint);
         canvas.drawBitmap(aspectBitmap, aspect.getX() - xOffset, aspect.getY() - yOffset, paint);
 
