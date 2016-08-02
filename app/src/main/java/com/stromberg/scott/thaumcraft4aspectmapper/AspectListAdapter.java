@@ -1,6 +1,7 @@
 package com.stromberg.scott.thaumcraft4aspectmapper;
 
 import android.app.Dialog;
+import android.content.Context;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -12,11 +13,13 @@ import java.util.List;
 
 public class AspectListAdapter extends RecyclerView.Adapter<AspectListAdapter.AspectViewHolder> {
     private List<Aspect> items;
+    private Context context;
     private AspectListOnClickListener onClickListener;
     private Dialog dialog;
     private int dialogType;
 
-    public AspectListAdapter(AspectListOnClickListener onClickListener, Dialog dialog, int dialogType) {
+    public AspectListAdapter(Context context, AspectListOnClickListener onClickListener, Dialog dialog, int dialogType) {
+        this.context = context;
         this.onClickListener = onClickListener;
         this.dialog = dialog;
         this.dialogType = dialogType;
@@ -32,7 +35,8 @@ public class AspectListAdapter extends RecyclerView.Adapter<AspectListAdapter.As
     public void onBindViewHolder(AspectViewHolder holder, int position) {
         final Aspect aspect = items.get(position);
         holder.mAspectNameTextView.setText(aspect.getName());
-        holder.mAspectImageView.setImageResource(aspect.getImageResourceId());
+        holder.mAspectImageView.setImageResource(context.getResources().getIdentifier(aspect.getName().toLowerCase(), "drawable", context.getPackageName()));
+
 
         final boolean isLink = aspect.getLinkedAspects().contains(MainActivity.selectedAspect);
 

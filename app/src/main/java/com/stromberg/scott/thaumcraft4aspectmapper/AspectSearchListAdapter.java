@@ -59,7 +59,7 @@ public class AspectSearchListAdapter extends BaseAdapter implements Filterable {
         }
 
         holder.nameTextView.setText(suggestions.get(position).getName());
-        holder.aspectImageView.setImageResource(suggestions.get(position).getImageResourceId());
+        holder.aspectImageView.setImageResource(context.getResources().getIdentifier(suggestions.get(position).getName().toLowerCase(), "drawable", context.getPackageName()));
 
         convertView.setOnClickListener(new View.OnClickListener() {
             @Override

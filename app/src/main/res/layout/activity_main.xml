@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.design.widget.CoordinatorLayout
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:fab="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:fitsSystemWindows="true"
-    tools:context="com.stromberg.scott.thaumcraft4aspectmapper.MainActivity">
+    tools:context="com.stromberg.scott.thaumcraft4aspectmapper.MainActivity"
+    android:orientation="vertical">
 
     <android.support.design.widget.AppBarLayout
         android:layout_width="match_parent"
@@ -23,60 +24,66 @@
 
     </android.support.design.widget.AppBarLayout>
 
-    <include layout="@layout/content_main"/>
-
-    <com.github.clans.fab.FloatingActionMenu
-        android:id="@+id/fam"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="bottom|right"
-        android:layout_marginBottom="8dp"
-        android:layout_marginRight="8dp"
-        android:src="@drawable/ic_add_white_24dp"
-        fab:fab_colorNormal="@color/fabNormal"
-        fab:fab_colorPressed="@color/fabPressed"
-        fab:fab_colorRipple="@color/fabRipple"/>
-
-    <com.github.clans.fab.FloatingActionButton
-        android:id="@+id/fab"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="bottom|right"
-        android:layout_marginBottom="8dp"
-        android:layout_marginRight="8dp"
-        android:src="@drawable/ic_add_white_24dp"
-        fab:fab_colorNormal="@color/fabNormal"
-        fab:fab_colorPressed="@color/fabPressed"
-        fab:fab_colorRipple="@color/fabRipple"/>
-
-    <AutoCompleteTextView
-        android:id="@+id/fab_search_text_view"
+    <android.support.design.widget.CoordinatorLayout
+        android:id="@+id/coordinator_layout"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="@drawable/search_fab_background"
-        android:hint="Search for an aspect"
-        android:layout_gravity="center_horizontal|bottom"
-        android:paddingTop="5dp"
-        android:paddingBottom="5dp"
-        android:paddingLeft="10dp"
-        android:paddingRight="10dp"
-        android:layout_marginBottom="25dp"
-        android:layout_marginLeft="75dp"
-        android:layout_marginRight="75dp"
-        android:singleLine="true"
-        android:imeOptions="actionSearch"
-        android:visibility="invisible"/>
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true">
 
-    <com.github.clans.fab.FloatingActionMenu
-        android:id="@+id/searchFam"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="bottom|left"
-        android:layout_marginBottom="8dp"
-        android:layout_marginLeft="8dp"
-        fab:menu_icon="@drawable/ic_search_white_24dp"
-        fab:fab_colorNormal="@color/fabNormal"
-        fab:fab_colorPressed="@color/fabPressed"
-        fab:fab_colorRipple="@color/fabRipple"/>
+        <com.github.clans.fab.FloatingActionMenu
+            android:id="@+id/fam"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|right"
+            android:layout_marginBottom="8dp"
+            android:layout_marginRight="8dp"
+            android:src="@drawable/ic_add_white_24dp"
+            fab:fab_colorNormal="@color/fabNormal"
+            fab:fab_colorPressed="@color/fabPressed"
+            fab:fab_colorRipple="@color/fabRipple"/>
 
-</android.support.design.widget.CoordinatorLayout>
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/fab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|right"
+            android:layout_marginBottom="8dp"
+            android:layout_marginRight="8dp"
+            android:src="@drawable/ic_add_white_24dp"
+            fab:fab_colorNormal="@color/fabNormal"
+            fab:fab_colorPressed="@color/fabPressed"
+            fab:fab_colorRipple="@color/fabRipple"/>
+
+        <AutoCompleteTextView
+            android:id="@+id/fab_search_text_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/search_fab_background"
+            android:hint="Search for an aspect"
+            android:layout_gravity="center_horizontal|bottom"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:layout_marginBottom="25dp"
+            android:layout_marginLeft="75dp"
+            android:layout_marginRight="75dp"
+            android:singleLine="true"
+            android:imeOptions="actionSearch"
+            android:visibility="invisible"/>
+
+        <com.github.clans.fab.FloatingActionMenu
+            android:id="@+id/searchFam"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|left"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="8dp"
+            fab:menu_icon="@drawable/ic_search_white_24dp"
+            fab:fab_colorNormal="@color/fabNormal"
+            fab:fab_colorPressed="@color/fabPressed"
+            fab:fab_colorRipple="@color/fabRipple"/>
+
+    </android.support.design.widget.CoordinatorLayout>
+</LinearLayout>
+

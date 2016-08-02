@@ -1,0 +1,408 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<TableLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="@dimen/tableLayoutTopLeftRightPadding"
+    android:paddingLeft="@dimen/tableLayoutTopLeftRightPadding"
+    android:paddingRight="@dimen/tableLayoutTopLeftRightPadding"
+    android:paddingBottom="@dimen/tableLayoutBottomPadding">
+
+    <TableRow
+        android:layout_marginBottom="@dimen/aspect_row_bottom_margin">
+
+        <ImageButton
+            android:id="@+id/aer"
+            style="@style/MapImageViewWithRightMargin"
+            android:src="@drawable/aer"/>
+
+        <TextView style="@style/MapSpacer"/>
+
+        <TextView style="@style/MapSpacer"/>
+
+        <ImageButton
+            android:id="@+id/ordo"
+            style="@style/MapImageViewWithRightMargin"
+            android:src="@drawable/ordo"/>
+
+        <TextView style="@style/MapSpacer"/>
+
+        <TextView style="@style/MapSpacer"/>
+
+        <ImageButton
+            android:id="@+id/aqua"
+            style="@style/MapImageViewWithRightMargin"
+            android:src="@drawable/aqua"/>
+
+        <TextView style="@style/MapSpacer"/>
+
+        <TextView style="@style/MapSpacer"/>
+
+        <ImageButton
+            android:id="@+id/terra"
+            style="@style/MapImageViewWithRightMargin"
+            android:src="@drawable/terra"/>
+
+        <TextView style="@style/MapSpacer"/>
+
+        <ImageButton
+            android:id="@+id/ignis"
+            style="@style/MapImageViewWithRightMargin"
+            android:src="@drawable/ignis"/>
+
+        <TextView style="@style/MapSpacer"/>
+
+        <ImageButton
+            android:id="@+id/perditio"
+            style="@style/MapImageViewWithoutRightMargin"
+            android:src="@drawable/perditio"/>
+    </TableRow>
+
+    <TableRow
+        android:layout_marginBottom="@dimen/aspect_row_bottom_margin">
+
+        <ImageButton
+            android:id="@+id/lux"
+            style="@style/MapImageViewWithRightMargin"
+            android:src="@drawable/lux"/>
+
+        <TextView style="@style/MapSpacer"/>
+
+        <ImageButton
+            android:id="@+id/permutatio"
+            style="@style/MapImageViewWithRightMargin"
+            android:src="@drawable/permutatio"/>
+
+        <ImageButton
+            android:id="@+id/motus"
+            style="@style/MapImageViewWithRightMargin"
+            android:src="@drawable/motus"/>
+
+        <TextView style="@style/MapSpacer"/>
+
+        <ImageButton
+            android:id="@+id/tempestas"
+            style="@style/MapImageViewWithRightMargin"
+            android:src="@drawable/tempestas"/>
+
+        <ImageButton
+            android:id="@+id/venenum"
+            style="@style/MapImageViewWithRightMargin"
+            android:src="@drawable/venenum"/>
+
+        <TextView style="@style/MapSpacer"/>
+
+        <ImageButton
+            android:id="@+id/victus"
+            style="@style/MapImageViewWithRightMargin"
+            android:src="@drawable/victus"/>
+
+        <TextView style="@style/MapSpacer"/>
+
+        <ImageButton
+            android:id="@+id/vitreus"
+            style="@style/MapImageViewWithRightMargin"
+            android:src="@drawable/vitreus"/>
+
+        <ImageButton
+            android:id="@+id/potentia"
+            style="@style/MapImageViewWithRightMargin"
+            android:src="@drawable/potentia"/>
+
+        <ImageButton
+            android:id="@+id/gelum"
+            style="@style/MapImageViewWithRightMargin"
+            android:src="@drawable/gelum"/>
+
+        <ImageButton
+            android:id="@+id/vacuos"
+            style="@style/MapImageViewWithoutRightMargin"
+            android:src="@drawable/vacuos"/>
+    </TableRow>
+
+    <TableRow
+        android:layout_marginBottom="@dimen/aspect_row_bottom_margin">
+
+        <ImageButton
+            android:id="@+id/tenebrae"
+            style="@style/MapImageViewWithRightMargin"
+            android:src="@drawable/tenebrae"/>
+
+        <ImageButton
+            android:id="@+id/volatus"
+            style="@style/MapImageViewWithRightMargin"
+            android:src="@drawable/volatus"/>
+
+        <ImageButton
+            android:id="@+id/vinculum"
+            style="@style/MapImageViewWithRightMargin"
+            android:src="@drawable/vinculum"/>
+
+        <ImageButton
+            android:id="@+id/bestia"
+            style="@style/MapImageViewWithRightMargin"
+            android:src="@drawable/bestia"/>
+
+        <ImageButton
+            android:id="@+id/iter"
+            style="@style/MapImageViewWithRightMargin"
+            android:src="@drawable/iter"/>
+
+        <TextView style="@style/MapSpacer"/>
+
+        <ImageButton
+            android:id="@+id/mortuus"
+            style="@style/MapImageViewWithRightMargin"
+            android:src="@drawable/mortuus"/>
+
+        <ImageButton
+            android:id="@+id/limus"
+            style="@style/MapImageViewWithRightMargin"
+            android:src="@drawable/limus"/>
+
+        <ImageButton
+            android:id="@+id/sano"
+            style="@style/MapImageViewWithRightMargin"
+            android:src="@drawable/sano"/>
+
+        <ImageButton
+            android:id="@+id/herba"
+            style="@style/MapImageViewWithRightMargin"
+            android:src="@drawable/herba"/>
+
+        <ImageButton
+            android:id="@+id/metallum"
+            style="@style/MapImageViewWithRightMargin"
+            android:src="@drawable/metallum"/>
+
+        <ImageButton
+            android:id="@+id/praecantatio"
+            style="@style/MapImageViewWithRightMargin"
+            android:src="@drawable/praecantatio"/>
+
+        <ImageButton
+            android:id="@+id/fames"
+            style="@style/MapImageViewWithRightMargin"
+            android:src="@drawable/fames"/>
+    </TableRow>
+
+    <TableRow
+        android:layout_marginBottom="@dimen/aspect_row_bottom_margin">
+
+        <ImageButton
+            android:id="@+id/alienis"
+            style="@style/MapImageViewWithRightMargin"
+            android:src="@drawable/alienis"/>
+
+        <TextView style="@style/MapSpacer"/>
+
+        <TextView style="@style/MapSpacer"/>
+
+        <ImageButton
+            android:id="@+id/corpus"
+            style="@style/MapImageViewWithRightMargin"
+            android:src="@drawable/corpus"/>
+
+        <TextView style="@style/MapSpacer"/>
+
+        <ImageButton
+            android:id="@+id/exanimis"
+            style="@style/MapImageViewWithRightMargin"
+            android:src="@drawable/exanimis"/>
+
+        <ImageButton
+            android:id="@+id/spiritus"
+            style="@style/MapImageViewWithRightMargin"
+            android:src="@drawable/spiritus"/>
+
+        <TextView style="@style/MapSpacer"/>
+
+        <TextView style="@style/MapSpacer"/>
+
+        <ImageButton
+            android:id="@+id/arbor"
+            style="@style/MapImageViewWithRightMargin"
+            android:src="@drawable/arbor"/>
+
+        <TextView style="@style/MapSpacer"/>
+
+        <ImageButton
+            android:id="@+id/auram"
+            style="@style/MapImageViewWithRightMargin"
+            android:src="@drawable/auram"/>
+
+        <ImageButton
+            android:id="@+id/vitium"
+            style="@style/MapImageViewWithRightMargin"
+            android:src="@drawable/vitium"/>
+
+        <TextView style="@style/MapSpacer"/>
+    </TableRow>
+
+    <TableRow
+        android:layout_marginBottom="@dimen/aspect_row_bottom_margin">
+
+        <TextView style="@style/MapSpacer"/>
+
+        <TextView style="@style/MapSpacer"/>
+
+        <TextView style="@style/MapSpacer"/>
+
+        <TextView style="@style/MapSpacer"/>
+
+        <TextView style="@style/MapSpacer"/>
+
+        <TextView style="@style/MapSpacer"/>
+
+        <ImageButton
+            android:id="@+id/sensus"
+            style="@style/MapImageViewWithRightMargin"
+            android:src="@drawable/sensus"/>
+
+        <ImageButton
+            android:id="@+id/cognitio"
+            style="@style/MapImageViewWithRightMargin"
+            android:src="@drawable/cognitio"/>
+
+        <TextView style="@style/MapSpacer"/>
+
+        <TextView style="@style/MapSpacer"/>
+
+        <TextView style="@style/MapSpacer"/>
+
+        <TextView style="@style/MapSpacer"/>
+
+        <TextView style="@style/MapSpacer"/>
+
+        <TextView style="@style/MapSpacer"/>
+    </TableRow>
+
+    <TableRow
+        android:layout_marginBottom="@dimen/aspect_row_bottom_margin">
+
+        <TextView style="@style/MapSpacer"/>
+
+        <TextView style="@style/MapSpacer"/>
+
+        <TextView style="@style/MapSpacer"/>
+
+        <TextView style="@style/MapSpacer"/>
+
+        <TextView style="@style/MapSpacer"/>
+
+        <TextView style="@style/MapSpacer"/>
+
+        <TextView style="@style/MapSpacer"/>
+
+        <ImageButton
+            android:id="@+id/humanus"
+            style="@style/MapImageViewWithRightMargin"
+            android:src="@drawable/humanus"/>
+
+        <TextView style="@style/MapSpacer"/>
+
+        <TextView style="@style/MapSpacer"/>
+
+        <TextView style="@style/MapSpacer"/>
+
+        <TextView style="@style/MapSpacer"/>
+
+        <TextView style="@style/MapSpacer"/>
+
+        <TextView style="@style/MapSpacer"/>
+    </TableRow>
+
+    <TableRow
+        android:layout_marginBottom="@dimen/aspect_row_bottom_margin">
+
+        <TextView style="@style/MapSpacer"/>
+
+        <TextView style="@style/MapSpacer"/>
+
+        <TextView style="@style/MapSpacer"/>
+
+        <TextView style="@style/MapSpacer"/>
+
+        <TextView style="@style/MapSpacer"/>
+
+        <ImageButton
+            android:id="@+id/lucrum"
+            style="@style/MapImageViewWithRightMargin"
+            android:src="@drawable/lucrum"/>
+
+        <ImageButton
+            android:id="@+id/instrumentum"
+            style="@style/MapImageViewWithRightMargin"
+            android:src="@drawable/instrumentum"/>
+
+        <ImageButton
+            android:id="@+id/perfodio"
+            style="@style/MapImageViewWithRightMargin"
+            android:src="@drawable/perfodio"/>
+
+        <TextView style="@style/MapSpacer"/>
+
+        <ImageButton
+            android:id="@+id/messis"
+            style="@style/MapImageViewWithRightMargin"
+            android:src="@drawable/messis"/>
+
+        <TextView style="@style/MapSpacer"/>
+
+        <TextView style="@style/MapSpacer"/>
+
+        <TextView style="@style/MapSpacer"/>
+
+        <TextView style="@style/MapSpacer"/>
+    </TableRow>
+
+    <TableRow>
+
+        <TextView style="@style/MapSpacer"/>
+
+        <TextView style="@style/MapSpacer"/>
+
+        <TextView style="@style/MapSpacer"/>
+
+        <TextView style="@style/MapSpacer"/>
+
+        <ImageButton
+            android:id="@+id/fabrico"
+            style="@style/MapImageViewWithRightMargin"
+            android:src="@drawable/fabrico"/>
+
+        <ImageButton
+            android:id="@+id/machina"
+            style="@style/MapImageViewWithRightMargin"
+            android:src="@drawable/machina"/>
+
+        <ImageButton
+            android:id="@+id/pannus"
+            style="@style/MapImageViewWithRightMargin"
+            android:src="@drawable/pannus"/>
+
+        <ImageButton
+            android:id="@+id/telum"
+            style="@style/MapImageViewWithRightMargin"
+            android:src="@drawable/telum"/>
+
+        <ImageButton
+            android:id="@+id/tutamen"
+            style="@style/MapImageViewWithRightMargin"
+            android:src="@drawable/tutamen"/>
+
+        <ImageButton
+            android:id="@+id/meto"
+            style="@style/MapImageViewWithRightMargin"
+            android:src="@drawable/meto"/>
+
+        <TextView style="@style/MapSpacer"/>
+
+        <TextView style="@style/MapSpacer"/>
+
+        <TextView style="@style/MapSpacer"/>
+
+        <TextView style="@style/MapSpacer"/>
+    </TableRow>
+</TableLayout>
